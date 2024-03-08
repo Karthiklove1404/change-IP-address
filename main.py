@@ -4,6 +4,7 @@ from time import sleep
 
 
 def main():
+    print("To stop press ' ctrl + z '")
     chang = int(input("After how much second do you want to change: "))
     os.system("service tor start")
     url = "https://httpbin.org/ip"
