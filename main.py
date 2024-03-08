@@ -14,7 +14,7 @@ def main():
     while True:
         request = requests.get(url, proxies=proxy)
         if request.status_code == 200:
-            print("your current ip :: {}".format(request.json().get()))
+            print("your current ip :: {}".format(request.json()))
         else:
             print("failed to get current ip")
         sleep(chang)
